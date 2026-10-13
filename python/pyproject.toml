@@ -1,0 +1,14 @@
+[project]
+name = "steadyrate"
+version = "0.1.0"
+description = "Five rate-limiting strategies with cross-language conformance"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+addopts = "-q"
