@@ -1,0 +1,142 @@
+{
+  "_comment": "Cross-language conformance vectors. See conformance/README.md.",
+  "timeline_ms": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    100,
+    200,
+    950,
+    990,
+    1000,
+    1010,
+    1500,
+    2000,
+    2500,
+    3000
+  ],
+  "cases": [
+    {
+      "strategy": "token_bucket",
+      "params": {
+        "capacity": 5,
+        "refill_per_sec": 2
+      },
+      "decisions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "strategy": "leaky_bucket",
+      "params": {
+        "capacity": 5,
+        "leak_per_sec": 2
+      },
+      "decisions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "strategy": "fixed_window",
+      "params": {
+        "limit": 5,
+        "window_ms": 1000
+      },
+      "decisions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "strategy": "sliding_window_log",
+      "params": {
+        "limit": 5,
+        "window_ms": 1000
+      },
+      "decisions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "strategy": "sliding_window_counter",
+      "params": {
+        "limit": 5,
+        "window_ms": 1000
+      },
+      "decisions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}
