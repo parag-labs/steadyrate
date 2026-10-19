@@ -1,0 +1,13 @@
+[package]
+name = "steadyrate"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Five rate-limiting strategies with cross-language conformance"
+
+[lib]
+name = "steadyrate"
+path = "src/lib.rs"
+
+[dev-dependencies]
+serde_json = "1"
