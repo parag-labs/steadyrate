@@ -1,0 +1,163 @@
+:root {
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --border: #e4e7ee;
+  --text: #1a1f36;
+  --muted: #6b7280;
+  --accent: #4f46e5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Inter, system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 44px 24px 60px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent);
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+h1 {
+  font-size: 30px;
+  margin: 16px 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.lede {
+  color: var(--muted);
+  max-width: 720px;
+  line-height: 1.55;
+}
+
+.controls {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 26px 0;
+}
+
+.controls label {
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 180px;
+  flex: 1;
+}
+
+.controls b {
+  color: var(--text);
+}
+
+.controls input[type="range"] {
+  accent-color: var(--accent);
+}
+
+.strategies {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.strategy {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.s-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.s-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.s-count {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.s-blurb {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.ticks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tick {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  border: 1.5px solid;
+  background: transparent;
+}
+
+.tick.off {
+  opacity: 0.35;
+}
+
+footer {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
