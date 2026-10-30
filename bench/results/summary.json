@@ -1,0 +1,14 @@
+{
+  "throughput_per_sec": {
+    "token_bucket": 2096036,
+    "leaky_bucket": 1861248,
+    "fixed_window": 3451408,
+    "sliding_window_log": 1934778,
+    "sliding_window_counter": 1203672
+  },
+  "accuracy": {
+    "exact_allowed": 600,
+    "sliding_counter_allowed": 573,
+    "error_pct": 4.5
+  }
+}
